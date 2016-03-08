@@ -3,7 +3,7 @@
   "private": true,
   "description": "A novelty app idea for quitting smoking.",
   "version": "0.0.1",
-  "main": "quitr.js",
+  "main": "client/app.jsx",
   "scripts": {
     "start": "meteor run",
     "test": "meteor test-app --driver-package practicalmeteor:mocha"
@@ -12,6 +12,8 @@
     "meteor-node-stubs": "~0.2.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-mounter": "^1.1.0",
+    "react-prop-types": "^0.3.0",
     "reapp-kit": "^1.2.16",
     "reapp-ui": "^0.12.74"
   }
