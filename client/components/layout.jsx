@@ -10,7 +10,7 @@ const Layout = ({ content }) => (
 );
 
 Layout.propTypes = {
-  content: PropTypes.string,
+  content: React.PropTypes.element,
 };
 
-export {Layout};
+export { Layout };

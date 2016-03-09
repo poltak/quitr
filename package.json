@@ -6,7 +6,9 @@
   "main": "client/app.jsx",
   "scripts": {
     "start": "meteor run",
-    "test": "meteor test-app --driver-package practicalmeteor:mocha"
+    "lint": "eslint ./lib ./client ./server --ext .js --ext .jsx",
+    "testonly": "meteor test-app --driver-package practicalmeteor:mocha",
+    "test": "npm run lint && npm run testonly"
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0",

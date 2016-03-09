@@ -1,0 +1,6 @@
+dependencies:
+  cache_directories:
+    - ~/.meteor
+  override:
+    - meteor || curl https://install.meteor.com | /bin/sh
+    - npm install    # if you're using package.json for npm deps

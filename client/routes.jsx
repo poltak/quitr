@@ -5,9 +5,11 @@ import {Layout, Welcome} from './app.jsx';
 
 FlowRouter.route('/', {
 
+  name: 'default',
+
   action() {
     mount(Layout, {
-      content: (<Welcome name="quitter" />),
+      content: () => (<Welcome name="quitter" />),
     });
   },
 

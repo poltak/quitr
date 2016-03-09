@@ -8,7 +8,7 @@ const Welcome = ({ name }) => (
 );
 
 Welcome.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: React.PropTypes.string.isRequired,
 };
 
 export {Welcome};
