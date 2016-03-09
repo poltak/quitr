@@ -1,7 +1,18 @@
 import React from 'react';
 
-import Layout from './components/layout.jsx';
-import Welcome from './components/welcome.jsx';
+// Define our Layout component
+export const Layout = ({ content }) => (
+  <div>
+    <h1>Quitr</h1>
+    <hr />
+    <div>{content}</div>
+  </div>
+);
 
-// Export everything needed for the app
-export {Welcome, Layout};
+// Define our Welcome component
+export const Welcome = ({ name }) => (
+  <div>
+    Hello, {name}.
+  </div>
+);
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import {mount} from 'react-mounter';
 // Load Layout and Welcome React components
-import {Layout, Welcome} from './app.jsx';
+import {Welcome, Layout} from './app.jsx';
 
 FlowRouter.route('/', {
 
@@ -9,7 +9,7 @@ FlowRouter.route('/', {
 
   action() {
     mount(Layout, {
-      content: () => (<Welcome name="quitter" />),
+      content: (<Welcome name="quitter" />),
     });
   },
 
